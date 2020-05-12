@@ -4,12 +4,22 @@
   "description": "webrtc demo",
   "main": "index.js",
   "scripts": {
-    "gum": "http-server src"
+    "build:prod": "fish build prod vue",
+    "build:test": "fish build test vue",
+    "start": "fish start vue",
+    "upload": "fish upload",
+    "update": "auto-vers -t"
   },
-  "keywords": ["getUserMedia"],
+  "keywords": [
+    "getUserMedia"
+  ],
   "author": "fish uncle",
   "license": "MIT",
   "dependencies": {
-    "http-server": "^0.12.1"
+    "@fish/cli": "^1.0.19",
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "auto-vers": "^1.0.3"
   }
 }
